@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <string>
 
 using namespace std;
 
@@ -15,11 +16,26 @@ float square_geron(float a, float b, float c)
        	return s;	
 }
 
+string equisceles_check (float a, float b, float c)
+{
+	string answ = "NO";
+        if (a - b == 0 || a - c == 0 || c - b == 0) answ = "YES";
+	return answ;
+}	
+
 int main()
 {
-	float a = 2, b = 3, c = 2;
+	float a = 9, b = 3, c = 2;
+	cout << "" << endl;
+	cout << "START PROGRAM:" << endl;
+	cout << "" << endl;
+	cout << "Sides of the triangle: " << a << ", " << b << ", " << c << endl;
+	cout << "" << endl;
 	cout << "===PERIMETER:===	" << perimeter(a, b, c) << endl;
 	cout << "" << endl;
 	cout << "===SQUARE:===        " << square_geron(a, b, c) << endl;
+	cout << "" << endl;
+	cout << "===EQUISCELES CHECK:===        " <<  equisceles_check(a, b, c) << endl;
+	cout << "" << endl;
 	return 0;
 }
