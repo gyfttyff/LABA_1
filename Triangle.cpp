@@ -38,13 +38,17 @@ int main()
 	cout << "" << endl;
 	cout << "Sides of the triangle: " << a << ", " << b << ", " << c << endl;
 	cout << "" << endl;
-	cout << "===TEST EXISTENCE OF TRIANGLE===   " << test_of_exist(a, b, c) << endl;
+	string testexis = test_of_exist(a, b, c);
+	cout << "===TEST EXISTENCE OF TRIANGLE===   " << testexis << endl;
 	cout << "" << endl;
+	if (testexis == "Yes! It's a Triangle")
+	{
 	cout << "===PERIMETER:===   " << perimeter(a, b, c) << endl;
 	cout << "" << endl;
 	cout << "===SQUARE:===   " << square_geron(a, b, c) << endl;
 	cout << "" << endl;
 	cout << "===EQUISCELES CHECK:===   " <<  equisceles_check(a, b, c) << endl;
 	cout << "" << endl;
+	}
 	return 0;
 }
