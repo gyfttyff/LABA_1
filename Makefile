@@ -10,15 +10,14 @@ all: $(TARGET)
 
 # Линковка
 $(TARGET): $(PROJ)
-	@echo "Компиляция..."
+	@echo "Компилирование..."
 	$(CXX) $(PROJ) -o $(TARGET)
 # Очистка
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) 
 # Запуск
 run: $(TARGET)
 	./$(TARGET)
 # Объявление файловых целей (чтобы make не искал файлы с такими именами)
 .PHONY: all clean
-
 
