@@ -7,7 +7,7 @@ using namespace std;
 string test_of_exist (float a, float b, float c) // Проверка на существование треугольника по неравенствам треугольника
 {
 	string answ = "No... It's not a Triangle";
-	if (a < b + c && c < b + a && b < c + a) answ = "Yes! It's a Triangle";
+	if (a < b + c && c < b + a && b < c + a && a > 0 && b > 0 && c > 0) answ = "Yes! It's a Triangle";
 	return answ;
 }
 
