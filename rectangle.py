@@ -3,7 +3,9 @@ import math
 def rectangle():
     try:
         a = float(input("Введите длину первой стороны a : "))
+
         b = float(input("Введите длину второй стороны b : "))
+
         if a <= 0 or b <= 0:
             print("Ошибка: Стороны прямоугольника должны быть больше нуля")
             return
