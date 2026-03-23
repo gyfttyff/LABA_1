@@ -35,6 +35,8 @@ int main()
 	float a,b,c;
 	cin >>  a >> b >> c;	
        	cout << "" << endl;	
+	float a, b, c;
+       	cin >> a >> b >> c;	
 	cout << "START PROGRAM:" << endl;
 	cout << "" << endl;
 	cout << "Sides of the triangle: " << a << ", " << b << ", " << c << endl;
