@@ -32,7 +32,8 @@ string equisceles_check (float a, float b, float c) // Проверка на р�
 
 int main()
 {
-	float a = 4, b = 3, c = 2;
+	float a,b,c;
+	cin >>  a >> b >> c;	
        	cout << "" << endl;	
 	cout << "START PROGRAM:" << endl;
 	cout << "" << endl;
